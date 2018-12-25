@@ -1,0 +1,10 @@
+# Using alpine Linux - Edge
+FROM alpine:edge
+
+LABEL maintainer="Sanny Mulyono <smulyono@me.com>"
+
+RUN echo http://dl-4.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+	apk update && \ 
+	apk add --update net-tools git bash
+
+CMD ["/bin/bash"]

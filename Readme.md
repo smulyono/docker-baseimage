@@ -1,2 +1,2 @@
-# Base image with Alpine:edge
+# Base image with Alpine:latest
 
